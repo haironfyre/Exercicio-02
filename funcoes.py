@@ -1,13 +1,15 @@
 def questao1() :
-    print("", 5**2, 9 * 5, 15 / 12, 12 / 15, 15 // 12, 12 // 15, 5 % 2, 9 % 5, 15 % 12, 12 % 15, 6 % 6, 0 % 7)
+    return print("", 5**2, 9 * 5, 15 / 12, 12 / 15, 15 // 12, 12 // 15, 5 % 2, 9 % 5, 15 % 12, 12 % 15, 6 % 6, 0 % 7)
 questao1()
 
 def questao2() :
-    print("Daqui a dois dias, as 5 da tarde o alarme irá tocar")
+    return print("Daqui a dois dias, as 5 da tarde o alarme irá tocar")
 questao2()
 
 def questao3() :
+    print("Insira a hora atual")
     m = int(input())
+    print("Insira o tempo de espera")
     n = int(input())
     x = (m+n)%24
     print("Hora atual: {}".format(m))
@@ -29,20 +31,21 @@ def questao5() :
 questao5()
 
 def questao11() :
-    print("", 6 * (1 - 2))
+    return print("", 6 * (1 - 2))
 questao11()
 
 def questao2a() :
+    print("Insira a quantidade de anos")
     t = int(input())
     js = 10000*((1+(0.08/12))**(12*t))
-    return print("", js)
+    return print("Valor final de juros após", t, "anos será:", js)
 questao2a()
 
 def questao33() :
     print("Digite o raio")
     r = float(input())
     a = (3.14*(r**2))
-    return print("", a)
+    return print("a área do círculo é:", a)
 questao33()
 
 def questao44() :
@@ -50,25 +53,27 @@ def questao44() :
     b = float(input())
     h = float(input())
     a = b*h
-    return print("", a)
+    return print("A área do retangulo é:", a)
 questao44()
 
 def questao55() :
+    print("Insira os quilômetros percorridos:")
     km = int(input())
+    print("Insira a quantidade de galosina consumida:")
     lt = float(input())
     con = km/lt
-    return print("", con)
+    return print("O consumo de gasolina por quilômetro é igual a:", con)
 questao55()
 
 
 def questao6() :
     print("Insira a temperatura em C")
     c = int(input())
-    print("", (c*1.8)+32)
+    return print("Temperatura em Fº", (c*1.8)+32)
 questao6()
 
 def questao7() :
     print("Insira a temperatura em F")
     f = float(input())
-    print("", (f-32)/1.8)
+    return print("Temperatura em Cº", (f-32)/1.8)
 questao7()
