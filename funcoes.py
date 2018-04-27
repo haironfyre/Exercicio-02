@@ -17,6 +17,14 @@ def questao3() :
     print("O alarme irá despertar às {} horas".format(x))
 questao3()
 
+def questao4(a,f):
+    f = f+a
+    t = f%30
+    res = t%7
+    return print("Mês =", t,"Dia da semana =", res)
+questao4(2,7)
+
+
 def questao5() :
     a1 = str("Só")
     a2 = str("trabah1o")
